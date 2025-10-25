@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Antarctic Explorer | 南极探险者</title>
+
+  <script>
+    document.documentElement.style.fontSize = 100 / 1551 + "vw";
+  </script>
+  <script type="module" crossorigin src="/stu3dantarcticajourney/assets/index-X2u_hNG7.js"></script>
+  <link rel="stylesheet" crossorigin href="/stu3dantarcticajourney/assets/index-ChuXHSBF.css">
+</head>
+
+<body data-lang="en">
+  <canvas id="canvas"></canvas>
+
+  <div class="lang-fix">
+    <button onclick="setLanguage('zh')">中</button>
+    <div>/</div>
+    <button onclick="setLanguage('en')">En</button>
+  </div>
+
+  <div class="welcome-ui">
+    <div class="welcome-title">
+      <div data-en>Antarctic</div>
+      <div data-en class="bottom">Explorer</div>
+
+      <div data-zh>南极</div>
+      <div data-zh>探险者</div>
+    </div>
+
+    <div class="tip">
+      <div class="tips-icon">
+        <div class="tips-content">
+          <img src="/stu3dantarcticajourney/imgs/xinhao.png" alt="">
+          <span data-en>Tips</span>
+          <span data-zh>提示</span>
+        </div>
+      </div>
+
+      <div class="tips-text">
+        <div class="tips-content">
+          <span data-en>Use the mouse wheel to move forward or backward</span>
+          <span data-zh>使用鼠标滚轮控制前进或后退</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="introduce">
+      <div class="introduce-line1">
+        <span data-en>
+          You are standing on a small boat, surrounded by the vast icy sea. Towering icebergs rise in the distance, and
+          occasionally penguins leap into the water.
+        </span>
+        <span data-zh>
+          你站在一艘小船上，周围是广阔的冰冷海域，远处高耸的冰山林立，偶尔还有企鹅跃入海中。
+        </span>
+      </div>
+
+      <div class="introduce-line2">
+        <span data-en>
+          Here, you can explore nearby icebergs, observe penguins in their natural habitat, and experience the serene,
+          majestic beauty of Antarctica.
+        </span>
+        <span data-zh>
+          在这里，你可以探索附近的冰山，观察企鹅在自然栖息地的活动，感受南极宁静而壮丽的美景。
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="penguin-ui-fix">
+    <div class="penguin-title">
+      <div data-en>Antarctic</div>
+      <div data-en>Explorer</div>
+
+      <div data-zh>南极</div>
+      <div data-zh>探险者</div>
+    </div>
+
+    <div class="tip">
+      <div class="tips-icon">
+        <div class="tips-content">
+          <img src="/stu3dantarcticajourney/imgs/xinhao.png" alt="">
+          <span data-en>Tips</span>
+          <span data-zh>提示</span>
+        </div>
+      </div>
+
+      <div class="tips-text">
+        <div class="tips-content">
+          <span data-en>Use the mouse wheel to move forward or backward</span>
+          <span data-zh>使用鼠标滚轮控制前进或后退</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="penguin-ui penguin-ui1">
+    <div class="penguin-content">
+      <div class="img-contain">
+        <img src="/stu3dantarcticajourney/imgs/waterScene/1.jpg" alt="南极海面" />
+      </div>
+      <div class="penguin-text">
+        <div class="penguin-text-content">
+          <p>
+            <span data-en>Icebergs are like prose poems that glaciers compose for the sea. They break away from the ice
+              shelves, carrying memories of millennia on a silent journey. Only one-tenth of their mass floats above
+              water; the rest lies hidden in the deep, mysterious blue.</span>
+            <span data-zh>
+              冰山，是冰川写给大海的散文诗。它们从冰架剥离，携着万年光阴的记忆，开始一场沉默的流浪。海面之上的皎洁，仅是它生命的十分之一；更多的部分，是沉潜于幽蓝深处的、不为人知的庞大与深邃。
+            </span>
+          </p>
+          <p>
+            <span data-en>They drift gently with the wind and currents, graceful like ancient messengers. Sometimes they
+              crack and thunder, telling their story; sometimes they remain silent, reflecting the sky and auroras. In
+              the end, they return everything to the ocean, completing a grand and tranquil cycle.</span>
+            <span data-zh>
+              它随风与洋流缓缓漂移，姿态从容如远古来的使者。有时崩裂轰鸣，是它在诉说；有时静默不语，倒映着天空与极光。最终，它将一切归还于海洋，完成一场盛大而安静的轮回。
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="penguin-ui penguin-ui2">
+    <div class="penguin-content">
+      <div class="img-contain">
+        <img src="/stu3dantarcticajourney/imgs/waterScene/img2.png" alt="南极海面" />
+      </div>
+      <div class="text-wrap">
+        <div class="penguin-text">
+          <div class="penguin-text-content penguin-text-content-top">
+            <p>
+              <span data-en>A majestic snow-capped mountain rises ahead, its peaks glinting silver in the sunlight.
+                Glaciers slowly extend from the slopes down to the sea, as if bridging sky and ocean.</span>
+              <span data-zh>
+                一座雄伟的雪山出现在前方，阳光下峰顶闪烁着银色光芒。冰川缓缓从山坡延伸至海边，仿佛架起了天空与海洋的桥梁。
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="penguin-text">
+          <div class="penguin-text-content">
+            <p>
+              <span data-en>The boat approaches the shore. Feel the firmness and chill of the icy ground beneath your
+                feet. Each step is like entering an unknown wonder, while enjoying the unique grandeur of the polar
+                landscape.</span>
+              <span data-zh>
+                船缓缓靠近岸边，准备登岸。感受脚下冰冷坚实的地面，每一步都像踏入未知的奇观，同时欣赏极地景观独特的壮丽。
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="penguin-ui penguin-ui3">
+    <div class="penguin-content">
+      <div class="img-contain">
+        <img src="/stu3dantarcticajourney/imgs/waterScene/2.jpg" alt="南极海面" />
+      </div>
+      <div class="penguin-text">
+        <div class="penguin-text-content">
+          <p>
+            <span data-en>On this timeless white continent, penguins are the most elegant commas, pausing between ice
+              and sky. They are not clumsy visitors, but true poets of the icy realm, writing resilience with their
+              black-and-white plumage.</span>
+            <span data-zh>
+              在这片被时间遗忘的纯白大陆上，它们是最优雅的逗号，停顿在冰原与天空之间。南极的企鹅，不是笨拙的过客，而是冰雪王国真正的诗人，用黑白相间的羽衣书写着生命的韧性。
+            </span>
+          </p>
+          <p class="bottom-penguin-text-content">
+            <span data-en>When the polar sun strikes the ice at an angle, they begin their daily pilgrimage—marching
+              toward the sea like gentlemen in formal attire attending an ancient rendezvous, or standing silently on
+              the ice cliffs, gazing afar, reflecting the solitude of the Southern Hemisphere.</span>
+            <span data-zh>
+              当极昼的阳光以最倾斜的角度抚摸冰面，它们便开始了每日的朝圣——或是列队走向海洋，如身着礼服的绅士赴一场古老的约会；或是静立冰崖，凝望远方，眼中盛装着整个南半球的孤独。
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="penguin-ui penguin-ui4">
+    <div class="penguin-content">
+      <div class="img-contain">
+        <img src="/stu3dantarcticajourney/imgs/waterScene/3.jpg" alt="南极海面" />
+      </div>
+      <div class="penguin-text">
+        <div class="penguin-text-content penguin-text-content1">
+          <p>
+            <span data-en>Emperor penguins incubate hope in -40°C winds, keeping their eggs on their feet and using
+              their body heat to endure the harsh polar climate. Their huddling forms are the warmest paradox in
+              Antarctica, radiating the fiercest emotions in the coldest places.</span>
+            <span data-zh>
+              帝企鹅在零下四十度的寒风中孵化希望，将蛋置于脚上，以身体的温度对抗极地的严酷。那相互依偎的身影，是南极最温暖的悖论——在最寒冷处，绽放最炽热的情感。
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="text-wrap">
+        <div class="penguin-text">
+          <div class="penguin-text-content penguin-text-content2">
+            <p>
+              <span data-en>Adélie penguins, like icy sprites, leap from the water, sending sparkling droplets into the
+                air and tracing graceful arcs against the blue ice. They carefully select stones to build nests; these
+                gray-brown pebbles become precious treasures in the barren land.</span>
+              <span data-zh>
+                阿德利企鹅则像是冰雪世界的精灵，从水中跃出时带起碎钻般的水花，在蓝冰衬托下划出优美的弧线。它们用喙精心挑选石子筑巢，那些灰褐色的卵石，是荒原上最珍贵的宝石。
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="penguin-text">
+          <div class="penguin-text-content penguin-text-content3">
+            <p>
+              <span data-en>When the aurora dances across the sky, they stand upright, as if listening to the secret
+                language of the universe. In their ancient postures lies an eternal story of survival, reproduction, and
+                perseverance. These are Antarctica's penguins—a beautiful poem in the snowstorm, the most touching fable
+                of life on this silent continent.</span>
+              <span data-zh>
+                当极光在天幕起舞，它们仰首静立，仿佛在聆听宇宙的秘语。万年如一的姿态里，藏着关于生存、繁衍与坚持的永恒叙事。这是南极的企鹅——风雪中的美好诗篇。沉默大陆上最动人的生命寓言。
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="penguin-ui penguin-ui5">
+    <div class="penguin-content">
+      <div class="img-contain">
+        <img src="/stu3dantarcticajourney/imgs/waterScene/img7.jpg" alt="南极海面" />
+      </div>
+      <div class="penguin-text">
+        <div class="penguin-text-content">
+          <p>
+            <span data-en>The Antarctic research station sits on the ice sheet, serving as an essential base for
+              scientists conducting polar research and environmental monitoring.</span>
+            <span data-zh>
+              南极科考站坐落在冰盖上，是科学家开展极地研究和环境监测的重要基地。
+            </span>
+          </p>
+          <p class="bottom-penguin-text-content">
+            <span data-en>Equipped with advanced laboratories and living facilities, scientists stay here long-term,
+              observing climate changes, wildlife behavior, and glacial movements.</span>
+            <span data-zh>
+              科考站配备先进的实验室和生活设施，科学家们长期驻守于此，观察气候变化、野生动物行为以及冰川运动。
+            </span>
+          </p>
+          <p class="bottom-penguin-text-content">
+            <span data-en>Every recorded measurement and every footprint in the snow contributes to polar science and
+              bears witness to history.</span>
+            <span data-zh>
+              每一次记录的测量数据，每一处雪地的足迹，都为极地科学贡献力量，也见证着历史。
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="penguin-ui penguin-ui6">
+    <div class="penguin-content">
+      <div class="penguin-text">
+        <div class="penguin-text-content">
+          <p>
+            <span data-en>No camera or image can capture even one percent of an iceberg's grandeur, and words cannot
+              convey even a millionth of the polar light.</span>
+            <span data-zh>
+              镜头和画面带不走冰山百分之一的壮美，文字写不出极地光芒的千万分之一。
+            </span>
+          </p>
+          <p class="bottom-penguin-text-content">
+            <span data-en>Only by experiencing it firsthand can one understand why this white continent is called
+              Earth's last frontier.</span>
+            <span data-zh>
+              唯有亲历，方能懂得这片白色大陆为何被称为地球最后的秘境。
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function setLanguage(lang) {
+      document.body.setAttribute("data-lang", lang);
+    }
+  </script>
+</body>
+
+</html>

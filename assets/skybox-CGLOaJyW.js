@@ -1,0 +1,1 @@
+import{e as g}from"./three.core-Dw2eIrsX.js";function p(n,s){const e=["/imgs/skybox/px.png","/imgs/skybox/nx.png","/imgs/skybox/py.png","/imgs/skybox/ny.png","/imgs/skybox/pz.png","/imgs/skybox/nz.png"],o=new g(s).load(e);return n.background=o,o}export{p as createSkybox};
